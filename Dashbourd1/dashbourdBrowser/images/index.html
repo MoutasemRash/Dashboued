@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Browser page</title>
+</head>
+<body class="body">
+  <!--    Timer         -->
+      <div class="browser-timer">
+        <span class="time">10:10</span>
+        <span class="date">1 april 2024</span>
+      </div>
+  <!--   Broweser Title-->
+     <div class="browser-title">
+      <h1>Belal Mustafa DashBoard</h1>
+     </div>
+
+
+  <!--   Browser-menu   -->
+     <div class="browser-menu">
+      <div class="browser-menu--item">
+          <div class="browser-menu--item--title">
+            <span>Your Links</span>
+          </div>
+          <div class="browser-menu--item--links js-menu-links">
+          </div>
+          <button class="add-new-link-btn js-show-addNewLink-form">
+              + new link 
+          </button>
+          <form action="" class="add-new-link-form hide-add-link-form js-add-link-form">
+            <input type="text" class="js-link-name"  placeholder="Name">
+            <input type="text" class="js-link-icon" placeholder="IconName">
+            <input type="text" class="js-link-link" placeholder="Link">
+            <button type="submit" class="add-link-button js-add-link-button">add</button>
+          
+          </form>
+          
+      </div>
+    <div class="browser-menu--item">
+      <div class="browser-menu--item--title">
+        <span>Weather status</span>
+      </div>
+      <div class="browser-menu--item--weather-items js-weather-items">
+        
+      </div>
+
+      </div>
+      <div class="browser-menu--item ">
+        <div class="browser-menu--item--title">
+          <span>Latest News</span>
+        </div>
+        <div class="js-news-item">
+
+        </div>
+      </div>
+      <div class="browser-menu--item">
+        <div class="browser-menu--item--title">
+          <span>Your Note</span>
+        </div>
+        <div class="note-box js-note-box" contenteditable="true">
+        </div>
+      </div>
+     </div>
+
+     <div class="roll-img">
+      <button class="roll-img-change js-change-img">
+        Change The background image
+      </button>
+     </div>
+     <script type="module" src="script/main.js"></script>
+</body>
+</html>

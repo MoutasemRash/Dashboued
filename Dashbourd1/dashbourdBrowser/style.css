@@ -1,0 +1,219 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.body{
+  background-image: url('https://picsum.photos/id/234/1600/750');
+  background-repeat: no-repeat;
+}
+
+/*   style the timer    */
+.dashboard-timer{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0  100px 0;
+
+}
+.timer{
+  background-color: rgba(128, 128, 128, 0.397);
+  padding:8px 20px;
+  border-radius: 15px;
+}
+
+/* style the dashboard menu */
+.dashboard-menu{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ column-gap: 30px;
+ padding:0 80px;
+
+}
+.dashboard-menu-item{
+  background-color: rgba(184, 177, 177, 0.527);
+  min-height: 400px;
+  border-radius: 10px;
+  padding:10px;
+}
+.dashboard-menu-item--title{
+  padding:10px;
+  text-align: center;
+  font-weight: 600;
+
+}
+.dashboard-menu-item--links--link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 50px;
+  background-color: white;
+  padding:5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.link--link{
+  flex:1 1 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dashboard-menu-item--links--link .link-icon{
+  flex:1 1 30%;
+  width:100%;
+  height: 100;
+
+}
+.dashboard-menu-item--links--link .link-name{
+  flex: 1 1 70%;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.dashboard-menu-item--links--link .link-delete-btn{
+  flex:1 1 10%;
+
+  
+}
+.dashboard-menu-item--links--link .link-delete-btn button{
+  all:unset;
+  cursor: pointer;
+  background-color: rgba(191, 184, 184, 0.45);
+  padding:2px 8px;
+  border-radius: 10px;
+}
+.link-icon img{
+  width:80%;
+}
+
+/*style the dd new link form */
+
+.add-form-links-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.add-form-links-btn button{
+  all:unset;
+  border:2px solid rgb(207, 39, 39);
+  padding:5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.add-new-link-form {
+  padding:10px 0 ;
+}
+.hide-add-new-link-form{
+  display: none;
+}
+.add-new-link-form input{
+  padding:5px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.add-new-link-form button{
+  all:unset;
+  border:2px solid rgb(207, 39, 39);
+  padding:5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* style the weather column */
+.dashboard-menu-item-weather-cards-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  min-height: 50px;
+  background-color: white;
+  padding:5px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+.weather-icon{
+  flex:1 1 30%;
+}
+.weather-info{
+  flex:1 1 70%;
+}
+.weather-icon img{
+width:100%;
+}
+.weather-day{
+  text-align: center;
+  font-weight: 600;
+  padding:10px;
+}
+.weather-describtion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.weather-dgree ,.weather-state{
+  background-color: rgba(170, 167, 167, 0.514);
+  padding:5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+
+/*  style the fourth column note box */
+.note-box{
+  background-color: white;
+  padding:10px;
+  min-height: 80%;
+  border-radius: 5px;
+
+}
+/* add stylse to the news card */
+.dashboard-menu-item-news-card{
+  background-color: #fff;
+  padding:20px 10px;
+  border-radius: 10px;
+  width:100%;
+}
+.news-author{
+  font-size: 18px;
+  font-weight: bold;
+  margin:5px 0 10px 0;
+}
+.news-describtion{
+  font-size: 14px;
+  color:gray;
+}
+.news-img{
+  height: 130px;
+}
+.news-img img{
+ width:100%;
+ height: 100%;
+}
+
+/* styles for change backGround button  */
+
+.change-page-background{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top:100px;
+  margin-bottom:30px;
+}
+.change-page-background button{
+  all:unset;
+  border:2px solid rgb(207, 39, 39);
+  padding:5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+

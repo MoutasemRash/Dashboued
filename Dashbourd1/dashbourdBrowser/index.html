@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>dash board</title>
+</head>
+<body class="body" id="body">
+  <div class="dashboard-timer js-dashboard-timer">
+    <span class="timer">
+    <span class="time js-timer" >12:34:45</span>
+    <span class="date" id="date"> 5 jul 2024</span>
+  </span>
+  </div>
+
+  
+  <div class="dashboard-menu">
+    <div class="dashboard-menu-item">
+      <div class="dashboard-menu-item--title">
+        Links
+      </div>
+      <div class="dashboard-menu-item--links " id="links-box">
+      
+      
+      </div>
+        <div class="add-form-links-btn" id="add-form-link-btn">
+          <button>
+            + Add new Link
+          </button>
+        </div>
+        <form action="" class="add-new-link-form hide-add-new-link-form" id="add-new-link-form">
+          <input type="text" placeholder="Name" id="link-name">
+          <input type="text" placeholder="icon" id="link-icon">
+          <input type="text" placeholder="Link" id="link-link">
+          <button>add</button>
+        </form>
+
+    </div>
+    <div class="dashboard-menu-item">
+      <div class="dashboard-menu-item--title">
+        Weather
+      </div>
+      <div class="dashboard-menu-item-weather-cards" id="weather-cards">
+ 
+      </div>
+    </div>
+    <div class="dashboard-menu-item">
+      <div class="dashboard-menu-item--title">
+        News
+      </div>
+      <div class="dashboard-menu-item-news-container" id="news-container">
+   
+      </div>
+    </div>
+    <div class="dashboard-menu-item">
+      <div class="dashboard-menu-item--title">
+        Your Note
+      </div>
+      <div class="note-box js-note-input" contenteditable="true" id="note-input">
+        hello
+      </div>
+    </div>
+  </div>
+
+  <div class="change-page-background">
+    <button id="change-bg-button">
+      Change background
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
